@@ -1,0 +1,47 @@
+PAS
+  [CA/test] PaS  → mean_gap=0.0000  mean_PI=0.03
+  [CA/test] Base → mean_gap=0.0000  mean_PI=0.04
+  Results → logs\pas_finetuned\PAS_results_CA_test.csv
+
+  [MIS/test] PaS  → mean_gap=0.0000  mean_PI=0.07
+  [MIS/test] Base → mean_gap=0.0000  mean_PI=0.50
+  Results → logs\pas_finetuned\PAS_results_MIS_test.csv
+
+
+  [MVC/test] PaS  → mean_gap=1.0000  mean_PI=1000.00
+  [MVC/test] Base → mean_gap=0.0000  mean_PI=0.17
+  Results → logs\pas_finetuned\PAS_results_MVC_test.csv
+
+
+Backdoor
+--- Running average over CA instance(s) ---
+  SCIP default  : 1.456s
+  GAT single    : 1.401s
+  GAT multi     : 1.430s
+  Summary CSV   : results\bd_eval_CA\summary.csv
+
+
+--- Running average over MIS instance(s) ---
+  SCIP default  : 17.077s
+  GAT single    : 32.042s
+  GAT multi     : 19.164s
+  Summary CSV   : results\bd_eval_MIS\summary.csv
+
+--- Running average over MVC instance(s) ---
+  SCIP default  : 20.781s
+  GAT single    : 18.839s
+  GAT multi     : 21.798s
+  Summary CSV   : results\bd_eval_MVC\summary.csv
+
+
+CONFIG
+  [CA/test]  Single-task → mean_PI=10092.03   SCIP default → mean_PI=10219.39   improvement=+1.2%
+  [MIS/test] Single-task → mean_PI=246.96     SCIP default → mean_PI=314.27     improvement=+21.4%
+  [MVC/test] Single-task → mean_PI=3966.52    SCIP default → mean_PI=4846.75    improvement=+18.2%
+
+  Multi-task (CA, 5 instances only): mean_PI=21317.35  — insufficient for comparison
+  Multi-task (MIS, MVC): not evaluated due to time constraints
+
+Win rate (Single-task beats SCIP):
+  CA:  47/100 instances
+  MIS: 68/100 instances

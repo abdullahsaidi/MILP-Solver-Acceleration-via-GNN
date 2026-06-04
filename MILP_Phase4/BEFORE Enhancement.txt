@@ -1,0 +1,17 @@
+  [CA/test] PaS  → mean_gap=0.0000  mean_PI=0.02
+  [CA/test] Base → mean_gap=0.0000  mean_PI=0.04
+  [CA/test] Fallback (no fixing) used on 0/100 instances
+  Results → logs\pas_fixed_finetuned\PAS_results_CA_test.csv
+
+ [MIS/test] PaS  → mean_gap=0.0000  mean_PI=0.07
+  [MIS/test] Base → mean_gap=0.0000  mean_PI=0.50
+  [MIS/test] Fallback (no fixing) used on 0/100 instances
+  Results → logs\pas_fixed_finetuned\PAS_results_MIS_test.csv
+
+[MVC/test] PaS  → mean_gap=1.0000  mean_PI=1000.00
+  [MVC/test] Base → mean_gap=0.0000  mean_PI=0.08
+  [MVC/test] Fallback (no fixing) used on 0/100 instances
+  Results → logs\pas_fixed_finetuned\PAS_results_MVC_test.csv
+
+
+(pas_milp) C:\Users\abdul\Downloads\milp_multitask_fixed\MILP_Phase3>

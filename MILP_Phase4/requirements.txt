@@ -1,0 +1,16 @@
+# MILP Multitask — Python dependencies
+# Install SCIP first: https://www.scipopt.org/index.php#download
+# Then: pip install pyscipopt
+
+pyscipopt>=4.0.0
+torch>=2.0.0
+torch-geometric>=2.3.0
+torch-scatter>=2.1.0
+pytorch-metric-learning>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+tensorboard>=2.13.0
+torchmetrics>=1.0.0
+torcheval>=0.0.7
+tqdm>=4.65.0
